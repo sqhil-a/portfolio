@@ -676,10 +676,12 @@ a {
 }
 
 .project-thumb.product {
+  display: grid;
+  place-items: center;
   background:
-    linear-gradient(180deg, rgba(6, 7, 10, 0.1), rgba(6, 7, 10, 0.72)),
-    linear-gradient(135deg, rgba(216, 209, 194, 0.16), rgba(6, 7, 10, 0.18)),
-    url("https://images.unsplash.com/photo-1753620010275-4c1751739322?auto=format&fit=crop&w=1400&q=70"),
+    linear-gradient(180deg, rgba(6, 7, 10, 0.06), rgba(6, 7, 10, 0.72)),
+    linear-gradient(135deg, rgba(216, 209, 194, 0.12), rgba(6, 7, 10, 0.18)),
+    url("assets/images/navio-project-mark.svg"),
     #121318;
   background-position: center;
   background-size: cover;
@@ -703,13 +705,16 @@ a {
 }
 
 .project-thumb.venture {
+  display: grid;
+  place-items: center;
   background:
-    linear-gradient(180deg, rgba(6, 7, 10, 0.04), rgba(6, 7, 10, 0.78)),
-    linear-gradient(135deg, rgba(215, 226, 255, 0.14), rgba(6, 7, 10, 0.24)),
-    url("https://images.unsplash.com/photo-1692106979244-a2ac98253f6b?auto=format&fit=crop&w=1400&q=70"),
+    linear-gradient(180deg, rgba(6, 7, 10, 0.14), rgba(6, 7, 10, 0.74)),
+    linear-gradient(135deg, rgba(215, 226, 255, 0.12), rgba(6, 7, 10, 0.22)),
+    url("assets/images/lurra-media-signature.png"),
     #121116;
   background-position: center;
-  background-size: cover;
+  background-size: 72%;
+  background-repeat: no-repeat;
 }
 
 .project-body {
