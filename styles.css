@@ -777,9 +777,35 @@ a {
 
 .achievement-waterloo {
   background:
-    url("https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1400")
-      center 46% / cover,
-    #111318;
+    radial-gradient(circle at 24% 28%, rgba(215, 226, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 78% 18%, rgba(216, 209, 194, 0.1), transparent 24%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(135deg, #171a21 0%, #0b0d12 62%, #07080b 100%);
+  background-size: auto, auto, 44px 44px, 44px 44px, auto;
+}
+
+.achievement-waterloo::before {
+  position: absolute;
+  right: clamp(28px, 4vw, 54px);
+  bottom: -18px;
+  color: rgba(255, 255, 255, 0.08);
+  content: "WATERLOO";
+  font-size: clamp(3.8rem, 8vw, 8.2rem);
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  line-height: 0.8;
+}
+
+.achievement-waterloo::after {
+  background:
+    linear-gradient(180deg, rgba(6, 7, 10, 0.02), rgba(6, 7, 10, 0.74)),
+    repeating-radial-gradient(
+      circle at 22% 30%,
+      transparent 0 34px,
+      rgba(215, 226, 255, 0.08) 35px 36px,
+      transparent 37px 72px
+    );
 }
 
 .achievement-kicker {
