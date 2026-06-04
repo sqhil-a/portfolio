@@ -765,9 +765,36 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   padding: clamp(30px, 5vw, 52px);
+  overflow: hidden;
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.074), rgba(255, 255, 255, 0.024)),
     linear-gradient(135deg, rgba(215, 226, 255, 0.075), transparent 56%);
+}
+
+.achievement-image {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 42%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.achievement-image::after,
+.mini-card-image::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(6, 7, 10, 0.08), rgba(6, 7, 10, 0.86)),
+    linear-gradient(135deg, rgba(215, 226, 255, 0.1), transparent 58%);
+  content: "";
+}
+
+.achievement-waterloo {
+  background:
+    url("https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1400")
+      center 46% / cover,
+    #111318;
 }
 
 .achievement-kicker {
@@ -784,6 +811,10 @@ a {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.achievement-feature > :not(.achievement-image) {
+  position: relative;
 }
 
 .achievement-feature h3 {
@@ -809,6 +840,56 @@ a {
 .mini-card,
 .skill-card {
   padding: 28px;
+}
+
+.mini-card-with-image {
+  overflow: hidden;
+  padding: 0;
+}
+
+.mini-card-with-image h3,
+.mini-card-with-image p {
+  margin-right: 28px;
+  margin-left: 28px;
+}
+
+.mini-card-with-image h3 {
+  margin-top: 24px;
+}
+
+.mini-card-with-image p {
+  margin-bottom: 28px;
+}
+
+.mini-card-image {
+  position: relative;
+  min-height: 104px;
+  border-bottom: 1px solid var(--line);
+  background-color: #111318;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.75s var(--ease-out), filter 0.75s var(--ease-out);
+}
+
+.mini-card:hover .mini-card-image {
+  filter: brightness(1.08);
+  transform: scale(1.025);
+}
+
+.image-skills {
+  background-image: url("https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=1400");
+}
+
+.image-game-jam {
+  background-image: url("https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1400");
+}
+
+.image-drums {
+  background-image: url("https://images.pexels.com/photos/7858663/pexels-photo-7858663.jpeg?auto=compress&cs=tinysrgb&w=1400");
+}
+
+.image-geography {
+  background-image: url("https://images.pexels.com/photos/269724/pexels-photo-269724.jpeg?auto=compress&cs=tinysrgb&w=1400");
 }
 
 .skills-grid {
