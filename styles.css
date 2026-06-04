@@ -219,8 +219,8 @@ a {
   display: grid;
   min-height: 100vh;
   align-items: center;
-  grid-template-columns: minmax(0, 0.94fr) minmax(360px, 0.62fr);
-  gap: clamp(46px, 6vw, 92px);
+  grid-template-columns: minmax(0, 0.6fr) minmax(390px, 0.4fr);
+  gap: clamp(58px, 8vw, 124px);
   padding-top: 150px;
 }
 
@@ -273,9 +273,9 @@ a {
 }
 
 .hero-title {
-  max-width: 780px;
+  max-width: 100%;
   margin: 0;
-  font-size: clamp(4rem, 9.4vw, 8.3rem);
+  font-size: clamp(4rem, 7.2vw, 7.2rem);
   line-height: 0.92;
   letter-spacing: -0.068em;
 }
