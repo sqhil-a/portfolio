@@ -219,8 +219,8 @@ a {
   display: grid;
   min-height: 100vh;
   align-items: center;
-  grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.66fr);
-  gap: 76px;
+  grid-template-columns: minmax(0, 0.94fr) minmax(360px, 0.62fr);
+  gap: clamp(46px, 6vw, 92px);
   padding-top: 150px;
 }
 
@@ -273,10 +273,10 @@ a {
 }
 
 .hero-title {
-  max-width: 850px;
+  max-width: 780px;
   margin: 0;
-  font-size: clamp(4.1rem, 11vw, 9.2rem);
-  line-height: 0.9;
+  font-size: clamp(4rem, 9.4vw, 8.3rem);
+  line-height: 0.92;
   letter-spacing: -0.068em;
 }
 
@@ -1009,6 +1009,16 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+}
+
+@media (max-width: 1180px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .profile-panel {
+    max-width: 560px;
+  }
 }
 
 @media (max-width: 760px) {
