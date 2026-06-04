@@ -500,6 +500,10 @@ a {
   margin-top: 18px;
 }
 
+.about-link {
+  margin-top: 26px;
+}
+
 .about-snapshot {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
