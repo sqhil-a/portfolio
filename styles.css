@@ -678,63 +678,16 @@ a {
 .project-thumb.product {
   display: grid;
   place-items: center;
-  background:
-    radial-gradient(circle at 50% 20%, rgba(215, 226, 255, 0.13), transparent 32%),
-    linear-gradient(135deg, rgba(216, 209, 194, 0.08), rgba(6, 7, 10, 0.18)),
-    #121318;
-  background-position: center;
-  background-size: cover;
-}
-
-.phone-mockup {
-  width: 86px;
-  height: 154px;
-  padding: 7px;
-  border: 2px solid rgba(255, 255, 255, 0.76);
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
-  transform: rotate(-7deg);
-}
-
-.phone-screen {
-  display: grid;
-  height: 100%;
-  place-items: center;
-  align-content: center;
-  gap: 8px;
-  border-radius: 16px;
   background: #0b0b0f;
-  color: var(--text);
 }
 
-.navio-star {
-  width: 34px;
-  height: 34px;
-  background: #fff;
-  clip-path: polygon(
-    50% 0%,
-    60% 38%,
-    100% 50%,
-    60% 62%,
-    50% 100%,
-    40% 62%,
-    0% 50%,
-    40% 38%
-  );
-}
-
-.phone-screen strong {
-  font-size: 1rem;
-  line-height: 1;
-}
-
-.phone-screen small {
-  color: var(--muted);
-  font-size: 0.62rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.project-thumb.product img,
+.project-thumb.venture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.96;
 }
 
 .project-thumb.coding {
@@ -758,14 +711,6 @@ a {
   display: grid;
   place-items: center;
   background: #030303;
-}
-
-.project-thumb.venture img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.96;
 }
 
 .project-body {
