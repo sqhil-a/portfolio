@@ -682,6 +682,7 @@ a {
 }
 
 .project-thumb.product img,
+.project-thumb.game img,
 .project-thumb.venture img {
   display: block;
   width: 100%;
@@ -698,13 +699,7 @@ a {
 }
 
 .project-thumb.game {
-  background:
-    linear-gradient(180deg, rgba(6, 7, 10, 0.04), rgba(6, 7, 10, 0.76)),
-    linear-gradient(135deg, rgba(215, 226, 255, 0.16), rgba(6, 7, 10, 0.2)),
-    url("https://images.unsplash.com/photo-1753998943918-dd2dfc4ee6ed?auto=format&fit=crop&w=1400&q=70"),
-    #101116;
-  background-position: center;
-  background-size: cover;
+  background: #030303;
 }
 
 .project-thumb.venture {
